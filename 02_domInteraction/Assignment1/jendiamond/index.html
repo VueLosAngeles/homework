@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>Ch2 Assignment 1</title>
+    <script src='https://unpkg.com/vue/dist/vue.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+    <div id='app' class='container'>
+      <body>
+        <div class='menu-container'>
+          <div class='menu'>
+            <h1>VueJS2 - The Complete Guide</h1>
+            <h2>Section 2 -Assignment 1</h2>
+          </div>
+        </div>
+
+        <div id="exercise" class='answers'>
+
+          <div class='footer'>
+            <div class='footer-item footer-one'>
+              <h3>Add your Name and Age - using Interpolation</h3>
+              <p v-once>{{ name }} {{ age }}</p>
+               <br/><hr/><br/>
+              <div class='code'>
+                &lt;p v-once>&#123; &#123; name &#125; &#125; &#123; &#123; age &#125; &#125;&lt;/p&gt;
+              </div>
+            </div>
+            <div class='footer-item footer-two'>
+              <h3> Output your age, multiplied by 3 </h3>
+              <p>Age, multiplied by 3 = {{ multipyByThree(age) }}</p>
+              <br/><hr/><br/>
+              <div class='code'>
+              &lt;p&gt;Age, multiplied by 3 &#61; &#123; &#123; multipyByThree(age) &#125; &#125; &lt;/p&gt;
+            </div>
+              <br/><br/><br/>
+              <div class='code'>
+                <p v-html='dataAndMethodsLink'></p>
+              </div>
+            </div>
+            <div class='footer-item footer-three'>
+              <h3>Call a function to output a random number</h3>
+              <p v-once>{{ getRandomNum(1,100) }}</p>
+              <br/><hr/><br/>
+              <div class='code'>
+                &lt;p&gt;&#123; &#123; getRandomNum(1,100) &#125; &#125; &lt;/p&gt;
+              </div>
+            </div>
+          </div>
+
+          <div class='footer'>
+
+            <div class='footer-item footer-one'>
+              <h3>Search any image on Google and output it here by binding the "src" attribute</h3>
+              <br/><hr/><br/>
+              <div class='code'>
+                &lt;img v-bind:src='peep'/&gt;
+              </div>
+            </div>
+
+            <div class='footer-item footer-two'>
+              <img v-bind:src='peep'/>
+            </div>
+
+            <div class='footer-item footer-three'>
+              <h3>Pre-Populate input value</h3>
+              <p>{{ name }} {{ age }}</p>
+              <div class="nameInput">
+                <b>Change the Name</b>
+                <input type="text" v-on:input='changeName' v-bind:value='name'>
+                <br/>
+                <b>Change the Age</b>
+                <input type="text" v-on:input='changeAge' v-bind:value='age'>
+              </div>
+              <hr/>
+              <div class='code'>
+                &lt;input type="text" v-on:input='changeName' v-bind:value='name'&gt;
+              </div>
+            </div>
+          </div> <!-- footer -->
+          <div class='codeArea'>
+          <div class='code'> <!-- https://www.ascii.cl/htmlcodes.htm -->
+            new Vue&#40;&#123;<br/>
+            &nbsp;&nbsp;el: '#app',<br/>
+            &nbsp;&nbsp;data: &#123;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;name: 'Jen Diamond',<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;age: 33,<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;dataAndMethodsLink: "&lt;a href ='https://youtu.be/2MAoq2-2nnE'&gt;Data and Methods Tutorial&lt;/a&gt;",<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;peep: 'https://i.pinimg.com/736x/8c/50/4c/8c504c6758edfab2e84fa1fbf129ba31--peep-show-happy-happy-happy.jpg',<br/>
+            &nbsp;&nbsp;&#125;,<br/>
+            &nbsp;&nbsp;methods: &#123;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;multipyByThree: function&#40;num&#41; &#123;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return parseInt&#40;num&#41; * 3;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&#125;,<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;getRandomNum: function &#40;min, max) &#123;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;min = Math.ceil&#40;min&#41;;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max = Math.floor&#40;max&#41;+ 1;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return Math.floor&#40;Math.random&#40;&#41; * &#40;max - min&#41; + min;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&#125;,<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;changeName: function&#40;argument&#41; &#123;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.name = event.target.value;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&#125;,<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;changeAge: function&#40;argument&#41; &#123;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.age = event.target.value;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&#125;,<br/>
+            &nbsp;&nbsp;&#125;<br/>
+            &#125;);
+
+        </div> <!-- codeArea -->
+        </div> <!-- answers -->
+      </body>
+  </div>
+  <script src="main.js"></script>
+</html>
