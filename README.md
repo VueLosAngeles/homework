@@ -31,10 +31,14 @@ like this:  `git branch jendiamond_assignment2`
 
 + `homework/02_domInteraction/Assignment2/jendiamond/index.html`
 + `homework/02_domInteraction/Assignment2/jendiamond/main.js`
++ `homework/02_domInteraction/Assignment2/jendiamond/styles.css`
+
+
+Close all your files in your text editor, That way you can be sure that they are all saved.
 
 ---
 
-6. Do your git workflow to add and commit your homework
+6. Do your git workflow to `add` and `commit` your homework
 
 ```
 git status
@@ -46,7 +50,7 @@ git status
 
 ---
 
-7. Push your branch to the VueLosAngeles/homework repo
+7. Push your branch to the `VueLosAngeles/homework` repo
 
 `git push origin branchname`  
 
@@ -61,3 +65,15 @@ ie: `git push origin jendiamond_assignment2`
 Go to https://github.com/VueLosAngeles/homework  
 Press the pull request button  
 Do not merge it. 
+
+*If you don't see a pull request button; you probably forgot to commit your work. The branch will be pushed but there will be nothing in it.*
+
+---
+
+9. Check out your local master and oull the changes
+`git checkout master`  
+`git pull origin master`
+
+---
+
+10. Start at #3 again to add your next homework
