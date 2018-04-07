@@ -10,9 +10,10 @@ In your terminal type
 
 3. Create a new branch
 
-Use the nameing convention:  
+Use the naming convention:  
 yourname_assignment#  
-like this:  jendiamond_assignment2
+
+like this:  `git branch jendiamond_assignment2`
 
 4. Create a directory with you name on it ie: jendiamond
 
