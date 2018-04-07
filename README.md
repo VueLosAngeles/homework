@@ -29,8 +29,8 @@ like this:  `git branch jendiamond_assignment2`
 
 5. Add your completed homework files in that directory
 
-`homework/02_domInteraction/Assignment2/jendiamond/index.html`
-`homework/02_domInteraction/Assignment2/jendiamond/main.js`
++ `homework/02_domInteraction/Assignment2/jendiamond/index.html`
++ `homework/02_domInteraction/Assignment2/jendiamond/main.js`
 
 ---
 
