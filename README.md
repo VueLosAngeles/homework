@@ -1,5 +1,5 @@
 # Homework for the CodeUp Club Vue class
-1. Clone this repoisitory locally
+1. Clone this repository locally
 
 In your terminal type
   `git clone git@github.com:VueLosAngeles/homework.git`
@@ -52,7 +52,7 @@ git status
 
 ie: `git push origin jendiamond_assignment2`  
 
-**NOT git push origin master! or just `git push` - that default pushes to master**  
+**Do NOT `git push origin master`! or just `git push` - that default pushes to master**  
 
 ---
 
