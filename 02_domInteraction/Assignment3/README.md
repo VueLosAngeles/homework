@@ -1,1 +1,23 @@
-README.md
+# Chapter 2 Assignment 3
+
+1. Show a "result" of 'not there yet' as long as "value" is not equal to 37
+- you can change "value" with the buttons.
+Print 'done' once you did it
+```html
+    <div>
+        <p>Current Value: {{ value }}</p>
+        <button @click="value += 5">Add 5</button>
+        <button @click="value += 1">Add 1</button>
+        <p>{{ result }}</p>
+    </div>
+```
+
+2. Watch for changes in the "result" and reset the "value" after 5 seconds
+(hint: setTimeout(..., 5000)
+```html
+    <div>
+        <input type="text">
+        <p>{{ value }}</p>
+    </div>
+</div>
+```

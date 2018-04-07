@@ -1,1 +1,57 @@
-README.md
+# Chapter 2 Assignment 4
+
+  1. Start the Effect with the Button.
+  The Effect should alternate the "highlight" or "shrink" class
+  on each new setInterval tick
+  (attach respective class to the div with id "effect" below)
+```html
+  <div>
+    <button @click="startEffect">Start Effect</button>
+    <div id="effect"></div>
+  </div>
+  ```
+
+  2. Create a couple of CSS classes
+  and attach them via the array syntax
+```html
+  <div>I got no class :(</div>
+    ```
+
+  3. Let the user enter a class (create some example classes)
+  and attach it
+```html
+  <div>
+    <input type="text">
+    <div></div>
+  </div>
+  ```
+
+  4. Let the user enter a class and enter true/ false for another class
+  (create some example classes)
+  and attach the classes
+```html
+  <div>
+    <input type="text">
+    <input type="text">
+    <div></div>
+  </div>
+  ```
+
+  5. Repeat 3. but now with values for styles (instead of class names).
+  Attach the respective styles.
+```html
+  <div>
+    <input type="text">
+    <div></div>
+  </div>
+  ```
+
+  6. Create a simple progress bar with setInterval and style bindings.
+  Start it by hitting the below button.
+```html
+  <div>
+    <button v-on:click="startProgress">Start Progress</button>
+    <div></div>
+  </div>
+</div>
+```
