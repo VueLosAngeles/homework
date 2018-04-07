@@ -1,5 +1,5 @@
 # Homework for the CodeUp Club Vue class
-1. Clone this reoisitory locally
+1. Clone this repoisitory locally
 
 In your terminal type
   `git clone git@github.com:VueLosAngeles/homework.git`
