@@ -38,7 +38,7 @@ like this:  `git branch jendiamond_assignment2`
 
 ```
 git status
-git add
+git add .
 git status
 git commit -m 'Add Assignment 2'
 git status
@@ -49,7 +49,9 @@ git status
 7. Push your branch to the VueLosAngeles/homework repo
 
 `git push origin branchname`  
+
 ie: `git push origin jendiamond_assignment2`  
+
 **NOT git push origin master! or just `git push` - that default pushes to master**  
 
 ---
