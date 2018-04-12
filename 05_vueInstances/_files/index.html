@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>Ch5</title>
+    <script src='https://unpkg.com/vue/dist/vue.js'></script>
+  </head>
+  <body>
+
+    <div id="exercise">
+      <h1 ref="heading">{{ title }}</h1>
+      <button v-on:click="show">Show Paragraph</button>
+      <p v-if="showParagraph">This is not always visible</p>
+    </div>
+
+  </body>
+  <script src="main.js"></script>
+</html>
